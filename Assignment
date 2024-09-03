@@ -5,3 +5,6 @@ assignment2<- c(6,18,14,22,27,17,22,20,22)
  myMean <- function(assignment2) {return(sum(assignment2)/length(assignment2))}
 
  # Mymean is created function that calculate the mean of the function. The mean is calculated by dividing the sum of the vector by the number of elements in assignment2. the length function find the number of elements. While the sum calulate the sum the vector. The calculation return the mean for the vector.
+
+myMean(assignment2)
+18.66667  is the mean of vector assignment2
