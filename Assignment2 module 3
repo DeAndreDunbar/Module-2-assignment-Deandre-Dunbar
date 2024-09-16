@@ -1,0 +1,54 @@
+set1 <- c(10, 2, 3, 2, 4, 2, 5)
+set2 <- c( 20, 12, 13, 12, 14, 12, 15)
+
+mean(set1)
+mean(set2)
+
+median(set1)
+median(set2)
+# mode is giving numeric 
+
+modenum <- function(x) {
+  counts <- unique(x)
+  counts[which.max(tabulate(match(x, counts)))]
+}
+modenum(set1)
+modenum(set2)
+
+
+range(set1)
+range(set2)
+  # alternate 
+max(set1) - min(set1)
+max(set2) - min(set2)
+
+quantile(set1)
+quantile(set2)
+
+var(set1)
+var(set2)
+
+sd(set1)
+sd(set2)
+# For set one mean is 4, median is 3, mode is 2
+# For set two mean 14, median is 13, mode is 12
+
+# For set one range is 8,  V,  
+quantile is      0%  25%  50%  75% 100% 
+                 2.0  2.0  3.0  4.5 10.0 
+
+variance is 8.333
+
+standard deviation is 2.886751
+
+# For set two range is 8,
+quantile is  0%  25%  50%  75% 100% 
+             12.0 12.0 13.0 14.5 20.0
+
+variance is 8.333
+
+standard deviation is 2.886751
+
+# For both of the sets the range, variance, standard deviation are the same. 
+# There are nearly identical patterns results for the mean, median, mode, and quatiles. 
+# The measure of spread seems very similar between the two sets. 
